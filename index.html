@@ -3,61 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing Business</title>
+  <title>Clothing Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Clothing Business</h1>
-    <nav>
-      <a href="#sale">For Sale</a>
-      <a href="#rent">For Rent</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="navbar">
+      <h1>Clothing Store</h1>
+      <nav>
+        <a href="#sale">Sale</a>
+        <a href="#rent">Rent</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
-
-  <section id="search">
-    <h2>Search Dresses</h2>
-    <input type="text" id="search-bar" placeholder="Search by type (e.g., Casual, Wedding)">
-  </section>
 
   <section id="filters">
     <h2>Filter Options</h2>
-    <label for="size">Size:</label>
-    <select id="size-filter">
-      <option value="">All Sizes</option>
-      <option value="S">Small</option>
-      <option value="M">Medium</option>
-      <option value="L">Large</option>
-    </select>
+    <div class="filter-group">
+      <h3>Dress Type</h3>
+      <input type="checkbox" id="casual" value="Casual"> Casual<br>
+      <input type="checkbox" id="western" value="Western"> Western<br>
+      <input type="checkbox" id="wedding" value="Wedding"> Wedding<br>
+    </div>
+    <div class="filter-group">
+      <h3>Size</h3>
+      <input type="checkbox" id="small" value="S"> Small<br>
+      <input type="checkbox" id="medium" value="M"> Medium<br>
+      <input type="checkbox" id="large" value="L"> Large<br>
+    </div>
+    <button id="apply-filters">Apply Filters</button>
   </section>
 
   <section id="sale">
     <h2>Products for Sale</h2>
-    <div class="product" data-type="Casual" data-size="M">
-      <img src="https://via.placeholder.com/150" alt="Casual Dress">
-      <h3>Casual Dress</h3>
-      <p>Material: Cotton</p>
-      <p>Price: ₹1200</p>
-      <p>Size: M</p>
+    <div class="product-grid">
+      <div class="product" data-type="Casual" data-size="M">
+        <img src="https://via.placeholder.com/150" alt="Casual Dress">
+        <h3>Casual Dress</h3>
+        <p>Material: Cotton</p>
+        <p>Price: ₹1200</p>
+        <p>Size: M</p>
+      </div>
+      <div class="product" data-type="Western" data-size="S">
+        <img src="https://via.placeholder.com/150" alt="Western Dress">
+        <h3>Western Dress</h3>
+        <p>Material: Polyester</p>
+        <p>Price: ₹1500</p>
+        <p>Size: S</p>
+      </div>
     </div>
   </section>
 
   <section id="rent">
     <h2>Products for Rent</h2>
-    <div class="product" data-type="Wedding" data-size="L">
-      <img src="https://via.placeholder.com/150" alt="Wedding Dress">
-      <h3>Wedding Dress</h3>
-      <p>Material: Silk</p>
-      <p>Rent: ₹500/day</p>
-      <p>Size: L</p>
+    <div class="product-grid">
+      <div class="product" data-type="Wedding" data-size="L">
+        <img src="https://via.placeholder.com/150" alt="Wedding Dress">
+        <h3>Wedding Dress</h3>
+        <p>Material: Silk</p>
+        <p>Rent: ₹500/day</p>
+        <p>Size: L</p>
+      </div>
     </div>
   </section>
 
   <footer id="contact">
     <h2>Contact Us</h2>
-    <p>Email: shradhayamundra@gmail.com</p>
-    <p>Phone: +91-7073050606</p>
+    <p>Email: info@clothingbusiness.com</p>
+    <p>Phone: +91-1234567890</p>
   </footer>
 
   <script src="script.js"></script>
