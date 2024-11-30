@@ -11,67 +11,82 @@
     <div class="navbar">
       <h1>Clothing Store</h1>
       <nav>
-        <a href="#sale">Sale</a>
-        <a href="#rent">Rent</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li><a href="#" id="sale-tab">Sale</a></li>
+          <li><a href="#" id="rent-tab">Rent</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section id="filters">
-    <h2>Filter Options</h2>
-    <div class="filter-group">
-      <h3>Dress Type</h3>
-      <input type="checkbox" id="casual" value="Casual"> Casual<br>
-      <input type="checkbox" id="western" value="Western"> Western<br>
-      <input type="checkbox" id="wedding" value="Wedding"> Wedding<br>
+  <section id="categories">
+    <div id="sale-categories" class="category-section">
+      <h2>Sale Categories</h2>
+      <ul>
+        <li>Rajasthani</li>
+        <li>Gujrati</li>
+        <li>Marathi</li>
+        <li>Punjabi</li>
+        <li>Haryanvi</li>
+        <li>Western</li>
+        <li>Bridal</li>
+        <li>Kurtis</li>
+        <li>Dupatta</li>
+        <li>Lehenga</li>
+      </ul>
     </div>
-    <div class="filter-group">
-      <h3>Size</h3>
-      <input type="checkbox" id="small" value="S"> Small<br>
-      <input type="checkbox" id="medium" value="M"> Medium<br>
-      <input type="checkbox" id="large" value="L"> Large<br>
+    <div id="rent-categories" class="category-section">
+      <h2>Rent Categories</h2>
+      <h3>Boys</h3>
+      <ul>
+        <li>Rajasthani</li>
+        <li>Gujrati</li>
+        <li>Kashmiri</li>
+        <li>Punjabi</li>
+        <li>Haryanvi</li>
+        <li>South Indian</li>
+      </ul>
+      <h3>Girls</h3>
+      <ul>
+        <li>Rajasthani</li>
+        <li>Gujrati</li>
+        <li>Kashmiri</li>
+        <li>Punjabi</li>
+        <li>Haryanvi</li>
+        <li>South Indian</li>
+      </ul>
+      <h3>School</h3>
+      <ul>
+        <li>Army</li>
+        <li>Animal</li>
+        <li>Gods and Goddesses</li>
+        <li>Periodic</li>
+        <li>Western</li>
+        <li>Ghost</li>
+        <li>Sent Clothes</li>
+      </ul>
+      <h3>Wedding</h3>
+      <ul>
+        <li>Bridal Lehenga</li>
+        <li>Lehenga</li>
+        <li>Western</li>
+        <li>Dupatta</li>
+        <li>Kurtis</li>
+        <li>Pagri</li>
+        <li>Jewelry</li>
+      </ul>
     </div>
-    <button id="apply-filters">Apply Filters</button>
   </section>
 
-  <section id="sale">
-    <h2>Products for Sale</h2>
+  <section id="products">
+    <h2>Products</h2>
     <div class="product-grid">
-      <div class="product" data-type="Casual" data-size="M">
-        <img src="https://via.placeholder.com/150" alt="Casual Dress">
-        <h3>Casual Dress</h3>
-        <p>Material: Cotton</p>
-        <p>Price: ₹1200</p>
-        <p>Size: M</p>
-      </div>
-      <div class="product" data-type="Western" data-size="S">
-        <img src="https://via.placeholder.com/150" alt="Western Dress">
-        <h3>Western Dress</h3>
-        <p>Material: Polyester</p>
-        <p>Price: ₹1500</p>
-        <p>Size: S</p>
-      </div>
+      <!-- Placeholder for dynamically filtered products -->
     </div>
   </section>
 
-  <section id="rent">
-    <h2>Products for Rent</h2>
-    <div class="product-grid">
-      <div class="product" data-type="Wedding" data-size="L">
-        <img src="https://via.placeholder.com/150" alt="Wedding Dress">
-        <h3>Wedding Dress</h3>
-        <p>Material: Silk</p>
-        <p>Rent: ₹500/day</p>
-        <p>Size: L</p>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@clothingbusiness.com</p>
-    <p>Phone: +91-1234567890</p>
+  <footer>
+    <p>© 2024 Clothing Store | All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
