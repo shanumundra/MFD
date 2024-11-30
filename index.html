@@ -3,92 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing Store</title>
+  <title>Fashion Store</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <div class="navbar">
-      <h1>Clothing Store</h1>
-      <nav>
-        <ul>
-          <li><a href="#" id="sale-tab">Sale</a></li>
-          <li><a href="#" id="rent-tab">Rent</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="logo">Fashion Store</div>
+    <nav>
+      <ul>
+        <li><a href="#" id="sale-btn">Sale</a></li>
+        <li><a href="#" id="rent-btn">Rent</a></li>
+        <li>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search for categories, dresses..."
+          />
+        </li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover Your Style</h1>
+      <p>Shop the latest fashion trends and rental outfits for any occasion.</p>
+      <button id="shop-now">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Featured Collections -->
+  <section class="collections">
+    <h2>Top Collections</h2>
+    <div class="slider">
+      <div class="slide"><img src="images/collection1.jpg" alt="Collection 1" /></div>
+      <div class="slide"><img src="images/collection2.jpg" alt="Collection 2" /></div>
+      <div class="slide"><img src="images/collection3.jpg" alt="Collection 3" /></div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
   <section id="categories">
-    <div id="sale-categories" class="category-section">
-      <h2>Sale Categories</h2>
-      <ul>
-        <li>Rajasthani</li>
-        <li>Gujrati</li>
-        <li>Marathi</li>
-        <li>Punjabi</li>
-        <li>Haryanvi</li>
-        <li>Western</li>
-        <li>Bridal</li>
-        <li>Kurtis</li>
-        <li>Dupatta</li>
-        <li>Lehenga</li>
-      </ul>
-    </div>
-    <div id="rent-categories" class="category-section">
-      <h2>Rent Categories</h2>
-      <h3>Boys</h3>
-      <ul>
-        <li>Rajasthani</li>
-        <li>Gujrati</li>
-        <li>Kashmiri</li>
-        <li>Punjabi</li>
-        <li>Haryanvi</li>
-        <li>South Indian</li>
-      </ul>
-      <h3>Girls</h3>
-      <ul>
-        <li>Rajasthani</li>
-        <li>Gujrati</li>
-        <li>Kashmiri</li>
-        <li>Punjabi</li>
-        <li>Haryanvi</li>
-        <li>South Indian</li>
-      </ul>
-      <h3>School</h3>
-      <ul>
-        <li>Army</li>
-        <li>Animal</li>
-        <li>Gods and Goddesses</li>
-        <li>Periodic</li>
-        <li>Western</li>
-        <li>Ghost</li>
-        <li>Sent Clothes</li>
-      </ul>
-      <h3>Wedding</h3>
-      <ul>
-        <li>Bridal Lehenga</li>
-        <li>Lehenga</li>
-        <li>Western</li>
-        <li>Dupatta</li>
-        <li>Kurtis</li>
-        <li>Pagri</li>
-        <li>Jewelry</li>
-      </ul>
+    <h2>Browse Categories</h2>
+    <div id="category-container">
+      <!-- Categories will be dynamically loaded -->
     </div>
   </section>
 
+  <!-- Products Section -->
   <section id="products">
-    <h2>Products</h2>
+    <h2 id="product-title">Explore Products</h2>
     <div class="product-grid">
-      <!-- Placeholder for dynamically filtered products -->
+      <!-- Products will be dynamically loaded -->
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2024 Clothing Store | All rights reserved.</p>
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>Phone: +91 9876543210</p>
+      <p>Email: support@fashionstore.com</p>
+      <p>Address: Fashion Hub, New Delhi, India</p>
+    </div>
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+    <p>&copy; 2024 Fashion Store. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
